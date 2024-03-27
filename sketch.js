@@ -24,7 +24,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1250, 1070, WEBGL);
+  var canvas = createCanvas(1250, 1070, WEBGL);
+  canvas.parent('project');
   normalMaterial();
   background(0);
 }
